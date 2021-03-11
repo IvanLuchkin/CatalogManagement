@@ -17,7 +17,6 @@ import test.hierarchical.catalogmanagement.model.Catalog;
 import test.hierarchical.catalogmanagement.model.dto.CatalogRequestDto;
 import test.hierarchical.catalogmanagement.model.dto.CatalogResponseDto;
 import test.hierarchical.catalogmanagement.model.mapper.CatalogMapper;
-import test.hierarchical.catalogmanagement.repository.CatalogRepository;
 import test.hierarchical.catalogmanagement.service.CatalogService;
 
 @RestController
