@@ -25,15 +25,11 @@ import test.hierarchical.catalogmanagement.service.CatalogService;
 public class CatalogController {
     private final CatalogService catalogService;
     private final CatalogMapper catalogMapper;
-    private final CatalogRepository catalogRepository;
 
     @Autowired
-    public CatalogController(CatalogService catalogService,
-                             CatalogMapper catalogMapper,
-                             CatalogRepository catalogRepository) {
+    public CatalogController(CatalogService catalogService, CatalogMapper catalogMapper) {
         this.catalogService = catalogService;
         this.catalogMapper = catalogMapper;
-        this.catalogRepository = catalogRepository;
     }
 
     @PostMapping
