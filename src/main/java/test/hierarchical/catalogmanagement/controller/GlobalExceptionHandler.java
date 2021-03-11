@@ -18,11 +18,11 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 
     @ExceptionHandler(value = CannotDeleteCatalogException.class)
     public ResponseEntity<Object> handleCannotDelete(CannotDeleteCatalogException exception) {
-        return new ResponseEntity<>(exception.getMessage(), HttpStatus.FORBIDDEN);
+        return new ResponseEntity<>(exception.getMessage(), HttpStatus.CONFLICT);
     }
 
     @ExceptionHandler(value = CannotMoveCatalogException.class)
     public ResponseEntity<Object> handleCannotMove(CannotMoveCatalogException exception) {
-        return new ResponseEntity<>(exception.getMessage(), HttpStatus.FORBIDDEN);
+        return new ResponseEntity<>(exception.getMessage(), HttpStatus.CONFLICT);
     }
 }
